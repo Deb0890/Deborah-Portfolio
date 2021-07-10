@@ -12,45 +12,39 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="" alt="">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- <img  src="/img/logoplaceholder.png" alt=""> -->
+    <nav>
+        <ul id="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
 
 <!-- Introduction -->
-<section class="intro" id="home">
-    <h1 class="section__title section__title--intro">Deborah Francis</h1>
-    <p class="section__subtitle section__subtitle--intro">Software Developer</p>
-    <img src="img/Myimage2-1.jpeg" alt="A picture of Deborah smiling" class="intro-img">
+<section id="home">
+    <h1 class="heading">Deborah Francis</h1>
+    <p class="subtitle">Software Developer</p>
+    <img src="img/Myimage2-1.jpeg" alt="A picture of Deborah smiling">
 </section>
 
 <!-- Portfolio -->
-<section class="my-portfolio" id="portfolio">
-    <h2 class="section__title--portfolio">Portfolio</h2>
-    <p class="section__subtitle--portfolio">A selection of my range of work</p>
-    <div class="portfolio-grid">
+<section id="portfolio">
+    <h2 class="heading">Portfolio</h2>
+    <p class="subtitle"></p>
+    <div id="portfolio-grid">
         <!--Portfolio item 1-->
         <div class="portfolio-item">
-            <a href="" >
-                <img src="" alt="TravelSite Project" class="portfolio-img">
+            <a href="https://tech-a-break.netlify.app/home.html" target="_blank" >
+                <img src="/img/Tech-a-break.PNG" class="portfolio-img" alt="">
                 <div class="overlay">
                     <div class="content">
-                        <h3 class="portfolio-caption">Project 1</h3>
+                        <h3 class="portfolio-caption">Tech-a-break</h3>
                     </div>
                 </div>
             </a>
@@ -58,7 +52,7 @@
         <!--Portfolio item 2-->
         <div class="portfolio-item">
             <a href="" >
-                <img src="" alt="" class="portfolio-img">
+                <img src="" class="portfolio-img" alt="" >
                 <div class="overlay">
                     <div class="content">
                         <h3 class="portfolio-caption">Project 2</h3>
@@ -69,7 +63,7 @@
         <!--Portfolio item 3-->
         <div class="portfolio-item">
             <a href="" >
-                <img src="" alt="" class="portfolio-img">
+                <img src="" class="portfolio-img" alt="" >
                 <div class="overlay">
                     <div class="content">
                         <h3 class="portfolio-caption">Project 3</h3>
@@ -80,7 +74,7 @@
         <!--Portfolio item 4-->
         <div class="portfolio-item">
             <a href="" >
-                <img src="" alt="" class="portfolio-img">
+                <img src="" class="portfolio-img" alt="" >
                 <div class="overlay">
                     <div class="content">
                         <h3 class="portfolio-caption">Project 4</h3>
@@ -92,38 +86,31 @@
 </section>
 
 <!-- About Me -->
-<section class="about-me" id="about">
-    <h2 class="section__title section__title--about">About Me</h2>
-    <p class="section__subtitle section__subtitle--about">HTML, CSS & JavaScript</p>
-    <div class="about-me__body">
-        <p> I'm a frontend web developer, who has a passion for all things tech!
+<section id="about">
+    <h2 class= "title">About Me</h2>
+    <!-- <p class="subtitle"> HTML, CSS & JavaScript</p> -->
+        <p> I'm a trainee software engineer, who has a passion for all things tech!
             I have so far enjoyed building l  
             nisi saepe cupiditate maxime est, veritatis eligendi placeat perferendis culpa minima 
-            nemo rem. Asperiores distinctio ipsam adipisci deleniti laudantium facere ducimus ullam</p>
-            <p></p>
-    </div>
-
-    <img src="img/aboutme.jpg" alt="Deborah looking at art" class="about-me__img">
+            nemo rem. Asperiores distinctio ipsam adipisci deleniti laudantium facere ducimus ullam
+        </p>
+    <img src="img/aboutme.jpg" alt="Deborah looking at art">
 </section>
 
-<!-- Contact -->
-<section class="contact-info" id="contact">
-<h2 class="section__title section__title--contact">Contact</h2>
-<p class="section__subtitle section__subtitle--contact">Here's how you can get in touch:</p>
-<a href="hello@deborah.com" class="contact-info__link">hello@deborah.com</a>
-<ul class="social-list">
-    <li class="social-list__item"><a href="https://github.com/Deb0890" class="social-list__link"></a><i class="fab fa-github"></i></li>
-    <li class="social-list__item"><a href="https://www.linkedin.com/in/deborah-c-francis/" class="social-list__link"></a><i class="fab fa-linkedin"></i></li>
-    <li class="social-list__item"><a href="https://codepen.io/DCFrancis" class="social-list__link"></a><i class="fab fa-codepen"></i></li>
+<!-- Find me -->
+<section id="find-me">
+<h2 class="title">Find Me!</h2>
+<ul id="socials-list">
+    <li class="socials-item"><a href="https://github.com/Deb0890" class="socials-list-link"></a><i class="fab fa-github"></i></li>
+    <li class="socials-item"><a href="https://www.linkedin.com/in/deborah-c-francis/" class="socials-list-link"></a><i class="fab fa-linkedin"></i></li>
+    <!-- <li class="socials-item"><a href="https://codepen.io/DCFrancis" class="socials-list-link"></a><i class="fab fa-codepen"></i></li> -->
 </ul>
 </section>
 
 <!-- Footer -->
-<footer class="footer">
+<footer >
 Copyright &copy; 2020 Deborah Francis
 </footer>
-
-<script src="index.js"></script>
 
 </body>
 </html>
