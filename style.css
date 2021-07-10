@@ -74,10 +74,11 @@ nav {
 
 #home {
     position: relative;
-    padding: 7em 0;
+    padding: 9.5em 0;
 }
 
 #home img {
+    max-width: 200px;
     box-shadow: var(--bs);
     border-radius: 50%;
 }
@@ -100,7 +101,7 @@ nav {
 
     #home img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 150px;
         position: relative;
         /* z-index: 2; */
     }
@@ -209,14 +210,14 @@ nav {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas:
-            "title img"
-            "subtitle img"
+            "title title"
             "text img";
-        grid-column-gap: 2em;
+        grid-column-gap: 1em;
     }
 
     #about .title {
         grid-area: title;
+        text-align: center;
     } 
     
     /* #about .subtitle {
