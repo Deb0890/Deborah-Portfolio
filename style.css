@@ -13,6 +13,10 @@ body {
     line-height: 1.6;
 }
 
+h1, p {
+    margin: 0;
+}
+
 /* Custom Properties */
 
 :root {
@@ -49,7 +53,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border: solid red 1px;
+    background-color: #303030;
 }
 
 #nav-list {
@@ -57,7 +61,7 @@ nav {
     height: 100%;
     /* flex-direction: row; */
     margin: 0;
-    padding: 0.5em;
+    padding: 20px;
 }
 
 
@@ -68,6 +72,7 @@ nav {
 
 .nav-link {
     text-decoration: none;
+    color: var(--clr-light);
 }
 
 /* Intro Section */
@@ -87,7 +92,7 @@ nav {
     display: inline-block;
 }
 
-@media (min-width:600px){
+/* @media (min-width:600px){ */
     #home {
         display: grid;
         width: min-content;
@@ -106,7 +111,11 @@ nav {
         /* z-index: 2; */
     }
 
-    #home .subtitle {
+    #home .heading {
+        align-self: center;
+    }
+
+    /* #home .subtitle {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
@@ -114,8 +123,8 @@ nav {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
-    }
-}
+    } */
+/* } */
 
 #portfolio {
     background-color: var(--clr-dark);
@@ -194,18 +203,19 @@ nav {
 
 /* About Me*/
 
-#about-me {
+#about {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2em;
+    padding: 3em;
 }
 
 #about img {
     box-shadow: var(--bs);
     border-radius: 5px;
+
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) { */
     #about {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -237,7 +247,8 @@ nav {
         max-width: 100%;
         /* z-index: 2; */
     }
-}
+/* } */
+
 
 /* Find me */
 
