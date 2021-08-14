@@ -21,6 +21,10 @@ h1, p {
     margin: 0;
 }
 
+.title, p {
+    text-align: center;
+}
+
 /* Custom Properties */
 
 :root {
@@ -52,14 +56,15 @@ h1, p {
 }  */
 
 nav {
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    /* top: 0; */
     width: 100%;
     /* height: auto; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #303030;
+    background-color: var(--clr-l-grey);
+    z-index: 200;
 }
 
 #nav-list {
@@ -67,7 +72,7 @@ nav {
     height: 100%;
     /* flex-direction: row; */
     margin: 0;
-    padding: 20px;
+    padding: 5px 20px;
 }
 
 
@@ -78,7 +83,7 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: var(--clr-light);
+    color: var(--clr-purple);
 }
 
 /* Intro Section */
@@ -208,24 +213,12 @@ nav {
     opacity: .1;
 }
 
-/* About Me*/
-
-#about {
-    padding: 3em;
-    text-align: center;
-    background-color: var(--clr-l-grey);
-}
-
-.about-text {
-    margin: 0 ;
-    padding: 0 30px;
-}
-
 .tech-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
+    margin-bottom: 50px;
 }
 
 .tech-logo-section {
@@ -233,6 +226,24 @@ nav {
     margin: 10px;
 }
 
+#subtitle {
+    margin-bottom: 20px;
+}
+
+
+/* About Me*/
+
+#about {
+    padding: 3em;
+    background-color: var(--clr-l-grey);
+}
+
+.about-text {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    padding: 0 30px;
+}
 
 
 /* #about img {
