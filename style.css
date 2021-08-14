@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -25,8 +29,10 @@ h1, p {
     --fw-reg: 300;
     /*colour theme*/
     --clr-light: #fff;
+    --clr-l-grey: #eee;
     --clr-dark: #303030;
     --clr-accent: #ac86f9;
+    --clr-purple: #512D6D;
     /*font size*/
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -127,28 +133,29 @@ nav {
 /* } */
 
 #portfolio {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-purple);
     color: var(--clr-light);
     text-align: center;
     padding: 2em 1em;
 }
 
 #portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 4em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 3em;
 }
 
 .portfolio-item {
     font-family:sans-serif;
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
     border: solid var(--clr-light) 5px;
     border-radius: 20px;
     position: relative;
-    background: var(--clr-accent);
+    background: var(--clr-l-grey);
     overflow: hidden;
-    }
+}
 
 .portfolio-img {
     opacity: 1;
@@ -166,7 +173,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 1em;
     color: var(--clr-light);
     overflow: hidden;
     }
@@ -204,19 +211,37 @@ nav {
 /* About Me*/
 
 #about {
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 3em;
+    text-align: center;
+    background-color: var(--clr-l-grey);
 }
 
-#about img {
+.about-text {
+    margin: 0 ;
+    padding: 0 30px;
+}
+
+.tech-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.tech-logo-section {
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+/* #about img {
     box-shadow: var(--bs);
     border-radius: 5px;
-
-}
+} */
 
 /* @media (min-width: 600px) { */
-    #about {
+    /* #about {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas:
@@ -230,31 +255,21 @@ nav {
         text-align: center;
     } 
     
-    /* #about .subtitle {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }   */
 
     #about img {
         grid-area: img;
         position: relative;
         display: block;
         max-width: 100%;
-        /* z-index: 2; */
-    }
+    } */
 /* } */
 
 
 /* Find me */
 
 #find-me {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 #find-me .title {
