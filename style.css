@@ -171,7 +171,7 @@ nav {
 .portfolio-item {
     font-family:'Roboto', sans-serif;
     /* width: 40%; */
-    width: 350px;
+    width: 250px;
     height: 250px;
     margin: 0 auto;
     border: solid var(--clr-light) 2px;
@@ -240,6 +240,43 @@ nav {
     margin-bottom: 20px;
     color: var(--clr-l-grey);
 }
+
+/* carousel */
+
+.carousel__boxes {
+    align-items: center;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+}
+
+.carousel__button {
+    background: var(--clr-dark);
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    opacity: 0.3;
+    position: absolute;
+    transition: opacity 0.25s;
+    width: 3rem;
+    z-index: 1;
+}
+
+.previous {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.carousel__button:hover {
+    opacity: 0.7;
+    }
 
 /* technologies */
 
@@ -344,6 +381,23 @@ footer {
     background-color: var(--clr-light) ;
     color: var(--clr-accent);
 } 
+
+@media screen and (max-width: 966px){
+    .carousel__button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px){
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+
 
 /* .socials-list-link {
     padding: .5em;
