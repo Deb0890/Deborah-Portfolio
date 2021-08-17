@@ -327,3 +327,10 @@ footer {
     }
 }
 
+@media screen and (max-width: 570px) {
+    .portfolio-item {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+    }
+}
