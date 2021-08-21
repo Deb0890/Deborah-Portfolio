@@ -20,11 +20,11 @@ carouselButtons.forEach(button => {
     }
 
     carouselBoxes.style.transform = `translateX(${translateX}px)`;
-    boxes.forEach((image, index) => {
+    boxes.forEach((box, index) => {
       if (index === boxIndex - 1) {
-        image.classList.add('active');
+        box.classList.add('active');
       } else {
-        image.classList.remove('active');
+        box.classList.remove('active');
       }
     });
   });
